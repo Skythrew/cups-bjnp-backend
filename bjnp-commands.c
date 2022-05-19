@@ -185,10 +185,8 @@ get_printer_id(http_addr_t *addr, char *model, char *IEEE1284_id)
 
     /* set IEEE1284_id */
 
-    if (printer_id != NULL) {
-        strncpy(printer_id, id.udp_identity_response.id, id_len);
-        printer_id[id_len] = '\0';
-    }
+    strncpy(printer_id, id.udp_identity_response.id, id_len);
+    printer_id[id_len] = '\0';
 
     bjnp_debug(LOG_INFO, "Identity = %s\n", printer_id);
 
