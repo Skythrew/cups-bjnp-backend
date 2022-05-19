@@ -1,0 +1,32 @@
+------------------------------------------------------------------------
+r166 | llagendijk | 2020-02-08 15:54:52 +0100 (Sat, 08 Feb 2020) | 5 lines
+
+- Fixed GCC10 compile errors:
+  - ftime is obsolete: replaced by gettimeofday()
+  - some structs were missing extern in headers files
+- Increased status buffer size to accomodate newer printers that send a much larger status
+
+------------------------------------------------------------------------
+r164 | llagendijk | 2019-08-10 14:37:38 +0200 (Sat, 10 Aug 2019) | 2 lines
+
+Fixed compilation error on GCC 9
+
+------------------------------------------------------------------------
+r163 | llagendijk | 2018-02-21 18:04:28 +0100 (Wed, 21 Feb 2018) | 2 lines
+
+Corrected NEWS
+
+------------------------------------------------------------------------
+r162 | llagendijk | 2018-02-21 17:47:22 +0100 (Wed, 21 Feb 2018) | 2 lines
+
+Updated Changelog & NEWS. Fixed version number in configure.ac
+
+------------------------------------------------------------------------
+r161 | llagendijk | 2018-02-21 16:59:27 +0100 (Wed, 21 Feb 2018) | 5 lines
+
+Updated license to GPLv2 OR LATER, to make it possible to use cups-bjnp with
+cups 2.3 that changed to Apache License 2.0, which is GPLv2 incompatible.
+There are no other changes. Released as cups-bjnp-2.0.1
+
+
+------------------------------------------------------------------------
